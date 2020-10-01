@@ -1,5 +1,14 @@
-.header{}
-.content{}
+.header{
+    background-color: #4a668c;
+
+}
+.header h1{
+    color: white;
+}
+.content{
+    font-family: 'Piazzolla', serif;
+}
+
 .block1{}
 .block2{}
 
