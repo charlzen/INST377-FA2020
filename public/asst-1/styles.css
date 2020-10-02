@@ -1,12 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header{
     background-color: #4a668c;
-
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    
 }
 .header h1{
     color: white;
+    margin-top: 0;
 }
 .content{
-    font-family: 'Piazzolla', serif;
+    background-color: cadetblue;
+    padding-top: 15px;
 }
 
 .block1{}
