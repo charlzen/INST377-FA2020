@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Sansita Swashed;
-    background-color: cadetblue;
+    background-color: rgb(241, 241, 233);
 }
 
 .one p {
@@ -24,7 +24,7 @@ p {
 }
 
 .header{
-    background-color: cornflowerblue;
+    background-color: #11572e;
     color: cornsilk;
     display: flex;
     flex-direction: row;
@@ -42,8 +42,8 @@ div{
     color: white;
     margin-top: 0;
 }
-.content{
-    background-color: cadetblue;
+.container{
+    background-color: rgb(241, 241, 233);
     padding-top: 15px;
 }
 .wrapper{
