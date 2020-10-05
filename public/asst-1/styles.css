@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Sansita Swashed;
-    background-color: cadetblue;
+    background-color: cornflowerblue;
 }
 
 .one p {
@@ -24,7 +24,7 @@ p {
 }
 
 .header{
-    background-color: cornflowerblue;
+    background-color: rgb(55, 71, 143);
     color: cornsilk;
     display: flex;
     flex-direction: row;
@@ -43,7 +43,13 @@ div{
     margin-top: 0;
 }
 .content{
-    background-color: cadetblue;
+    max-width: 960px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     padding-top: 15px;
 }
 .wrapper{
@@ -53,7 +59,13 @@ div{
 }
 
 .one{
-    flex: 0 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
     width: 175px;
     margin-right: 15px;
 }
@@ -63,4 +75,6 @@ div{
     background: 15px;
     border: dashed 1px coral;
 }
-
+.resp {
+    margin-bottom: 15px;
+}
