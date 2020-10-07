@@ -52,9 +52,16 @@
     letter-spacing: 1.2px;
     border-radius: 3px;
   }
+
+  .button {
+      margin-right: 10px;
+  }
+  .activate {
+      margin-right: 10px;
+  }
   
   .flex-inner li {
-    width: 80px;
+    width: 90px;
   }
   
   .flex-inner {
