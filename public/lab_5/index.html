@@ -24,9 +24,7 @@
                     <li><label for="message">Text field</label>
                         <textarea name="message" id="message" cols="33" rows="10">This is some default message text.</textarea></li>
                     <li>
-                        <p>
-                            Age
-                        </p>
+                    <p class ='checkbox-list-label'>Age</p> <!--Changed from a regular paragraph that says "Age" to a class selector-->
                         <ul class='flex-inner'>
                             <li><input type="checkbox" id="eighteen-thirtyfive" name="age">
                                 <label for="eighteen-thirtyfive">18-35</label></li>
@@ -38,11 +36,18 @@
                     </li>
                     <li>
                         <button class="button" id="submit_button" name="submit_button" type="submit">Submit form</button>
-                        <button class="activate" id="activate_button" name="activate_button" type="submit">Activate</button>
+                        <button class="activate" id="activate_button" name="activate_button" type="button">Activate</button>
                     </li>
                 </ul>
             </form>
         </div>
     </div>
+    function testFunction() {
+        fetch('/api')
+        .then((response) => response.text())
+        .then((response) => {
+             console.log(response);
+        })
+   }
 </body>
 </html>
