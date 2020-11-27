@@ -42,13 +42,31 @@
         </div>
     </div>
     <script>
-    function testFunction() {
-        fetch('/api')
-        .then((response) => response.text())
-        .then((response) => {
-            console.log(response);
-        })
-    }
+         function testFunction() {
+            fetch('/api')
+            .then((response) => response.text())
+            .then((response) =>{
+                console.log(response);
+                const fruits  =['Apple', 'Peach', 'Dragonfruit']
+                const checkbox = document.querySelectorAll('.flex-inner li label')
+                console.log(checkbox.length, checkbox[0]);
+                checkbox.forEach((check, i) => {
+                    console.log(check, i);
+                    const text = check.innerText;
+                    check.innerText = fruits[i];
+                })
+                const boxfruit = document.querySelector('.checkbox-list-label')
+                boxfruit.innerText = "Fruits";
+                const headerlabel= document.querySelector('h1')
+                headerlabel.innerText=response;
+                const color = 'rgb(' + (110) + ',' + (120) + ',' + (105) + ')'
+                document.body.style.background= color;
+                const margin = document.querySelector('.flex-outer')
+                margin.style ="margin: 0 auto;";
+                const labtitle = document.querySelector('title');
+                labtitle.innerText = response;
+            })
+        }
     </script>
 </body>
 </html>
